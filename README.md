@@ -16,6 +16,6 @@ The following lines need to be added to your androidmanifest.xml file:
     &lt;uses-permission android:name="android.permission.GET_TASKS" &gt;&lt;/uses-permission&gt;  
     &lt;uses-permission android:name="android.permission.INTERNET"&gt;&lt;/uses-permission&gt;  
     &lt;uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" &gt;&lt;/uses-permission&gt;  
-    &lt;uses-permission android:name="android.permission.WAKE_LOCK" / &gt;&lt;/uses-permission&gt;  
+    &lt;uses-permission android:name="android.permission.WAKE_LOCK" / &gt; 
 
 The android application probably should be using UDP instead of TCP, but I wanted to make sure that packets were in order and could be reliably recieved/ transmitted. Since sockets are being used, this could be modified to transmit data over a wifi/ internet connection, if IP's can be determined/set/known at run time. This way the ADB shouldn't have to be used to forward ports.
